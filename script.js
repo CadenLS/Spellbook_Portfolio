@@ -10,11 +10,11 @@ $(document).ready(function () {
     duration: 1200
   });
 
-  $('#nextPage').click(() => {
+  $('#nextPage').click(function () {
     $book.turn('next');
   });
 
-  $('#prevPage').click(() => {
+  $('#prevPage').click(function () {
     $book.turn('previous');
   });
 });
