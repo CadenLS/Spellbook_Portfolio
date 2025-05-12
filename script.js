@@ -7,7 +7,16 @@ $(document).ready(function () {
     autoCenter: true,
     elevation: 50,
     gradients: true,
-    duration: 1200
+    duration: 1200,
+    display: 'double',
+    when: {
+      turning: function (event, page, view) {
+        updateNavButtons(page);
+      },
+      turned: function (event, page, view) {
+        updateNavButtons(page);
+      }
+    }
   });
 
   $('#nextPage').click(function () {
@@ -17,4 +26,12 @@ $(document).ready(function () {
   $('#prevPage').click(function () {
     $book.turn('previous');
   });
+
+  updateNavButtons(1); // Initial button state
+
+  function updateNavButtons(page) {
+    const totalPages = $book.turn('pages');
+    $('#prevPage').toggle(page > 1);
+    $('#nextPage').toggle(page < totalPages);
+  }
 });

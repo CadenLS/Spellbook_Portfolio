@@ -36,8 +36,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: 60px;
+  margin: 0;
+  overflow: hidden; 
 }
-
 
 .page h1, .page h2 {
   color: #5e2605;
