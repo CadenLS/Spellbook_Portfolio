@@ -115,6 +115,9 @@ body {
 .book-controls {
   text-align: center;
   margin-top: 20px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
 }
 
 .nav-button {
