@@ -20,12 +20,17 @@ body {
   width: 800px;
   height: 500px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  position: relative;
 }
 
 .page {
+  width: 400px; /* Half the width of #book */
+  height: 500px;
+  position: absolute; /* <--- Required */
   background: url('images/page-texture.jpg') repeat;
   background-size: cover;
   padding: 40px;
+  box-sizing: border-box;
   color: #3b1e00;
   font-size: 1.1rem;
   line-height: 1.6;
