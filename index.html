@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spellbook Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="book-wrapper">
+    <div id="book">
+      <!-- Cover -->
+      <div class="page cover">
+        <h1>Your Name</h1>
+        <p class="subtitle">Arcane Developer & Web Wizard</p>
+      </div>
+
+      <!-- About Me -->
+      <div class="page about">
+        <h2>About Me</h2>
+        <p>I am a digital spellcaster with a love for crafting experiences through code and design. I specialize in front-end development, with a flair for fantasy-themed creativity.</p>
+        <div class="links">
+          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="page project">
+        <h2>Spell of Design</h2>
+        <img src="images/project1.png" alt="Project 1 screenshot">
+        <p>A UI/UX design-focused project featuring magical interfaces and user flows.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">Read More</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="page project">
+        <h2>Data Alchemy</h2>
+        <img src="images/project2.png" alt="Project 2 screenshot">
+        <p>This project transforms raw data into interactive, enchanted visualizations.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">Read More</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="page project">
+        <h2>Summoning App</h2>
+        <img src="images/project3.png" alt="Project 3 screenshot">
+        <p>A full-stack application conjured from JavaScript, Express, and RESTful APIs.</p>
+        <a href="https://github.com/yourusername/project3" target="_blank">Read More</a>
+      </div>
+
+      <!-- Skills -->
+      <div class="page skills">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React & Vue</li>
+          <li>Node.js & Express</li>
+          <li>Figma, Adobe XD</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="page contact">
+        <h2>Contact Me</h2>
+        <p>Send me an owl (or just email me):</p>
+        <p><a href="mailto:your@email.com">your@email.com</a></p>
+        <p>Or connect via LinkedIn or GitHub above!</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('#book').turn({
+        width: 800,
+        height: 500,
+        autoCenter: true,
+        elevation: 50,
+        gradients: true,
+      });
+    });
+  </script>
+</body>
+</html>
