@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: 'MedievalSharp', cursive;
   background-color: #2d1b0c;
@@ -31,13 +38,12 @@ body {
   box-sizing: border-box;
   color: #3b1e00;
   font-size: 1.65rem;
-  line-height: 1.6;
-  overflow-y: auto;           /* 👈 allow vertical scrolling */
+  line-height: 1.6;          /* 👈 allow vertical scrolling */
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 40px;
   margin: 0;
-  overflow: hidden; 
+  overflow: auto; 
 }
 
 .page h1, .page h2 {
