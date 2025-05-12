@@ -18,22 +18,22 @@ body {
 }
 
 #book {
-  width: 1600px;
-  height: 1000px;
+  width: 1200px;
+  height: 750px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
   position: relative;
 }
 
 .page {
-  width: 800px; /* Half the width of #book */
-  height: 1000px;
+  width: 600px; /* Half the width of #book */
+  height: 750px;
   position: absolute; /* <--- Required */
   background: url('images/page-texture.jpg') repeat;
   background-size: cover;
-  padding: 80px;
+  padding: 60px;
   box-sizing: border-box;
   color: #3b1e00;
-  font-size: 2rem;
+  font-size: 1.65rem;
   line-height: 1.6;
 }
 
