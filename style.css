@@ -111,3 +111,26 @@ body {
 .page.contact a:hover {
   color: #a36d2f;
 }
+
+.book-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-button {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.5rem;
+  background-color: #5e2605;
+  color: #f3e9dc;
+  border: 2px solid #a36d2f;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #7a3e13;
+}
+
