@@ -5,6 +5,6 @@ $(document).ready(function () {
     autoCenter: true,
     elevation: 50,
     gradients: true,
-    duration: 1200, // smooth page flip
+    duration: 1200
   });
 });

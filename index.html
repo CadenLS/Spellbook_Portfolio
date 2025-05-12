@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Spellbook Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Libraries -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="book-wrapper">
     <div id="book">
-      <!-- Cover -->
+      <!-- Cover (Front Page) -->
       <div class="page cover">
         <h1>Your Name</h1>
         <p class="subtitle">Arcane Developer & Web Wizard</p>
+      </div>
+
+      <!-- Inside of Cover (Blank or Decorative) -->
+      <div class="page">
+        <h2>Welcome, Traveler</h2>
+        <p>Flip the pages to reveal the secrets of my craft...</p>
       </div>
 
       <!-- About Me -->
@@ -32,7 +40,7 @@
       <!-- Project 1 -->
       <div class="page project">
         <h2>Spell of Design</h2>
-        <img src="images/project1.png" alt="Project 1 screenshot">
+        <img src="images/project1.png" alt="Project 1 screenshot" />
         <p>A UI/UX design-focused project featuring magical interfaces and user flows.</p>
         <a href="https://github.com/yourusername/project1" target="_blank">Read More</a>
       </div>
@@ -40,7 +48,7 @@
       <!-- Project 2 -->
       <div class="page project">
         <h2>Data Alchemy</h2>
-        <img src="images/project2.png" alt="Project 2 screenshot">
+        <img src="images/project2.png" alt="Project 2 screenshot" />
         <p>This project transforms raw data into interactive, enchanted visualizations.</p>
         <a href="https://github.com/yourusername/project2" target="_blank">Read More</a>
       </div>
@@ -48,7 +56,7 @@
       <!-- Project 3 -->
       <div class="page project">
         <h2>Summoning App</h2>
-        <img src="images/project3.png" alt="Project 3 screenshot">
+        <img src="images/project3.png" alt="Project 3 screenshot" />
         <p>A full-stack application conjured from JavaScript, Express, and RESTful APIs.</p>
         <a href="https://github.com/yourusername/project3" target="_blank">Read More</a>
       </div>
@@ -71,19 +79,13 @@
         <p><a href="mailto:your@email.com">your@email.com</a></p>
         <p>Or connect via LinkedIn or GitHub above!</p>
       </div>
+
+      <!-- Back Cover -->
+      <div class="page cover">
+        <h2>Farewell</h2>
+        <p>Thank you for reading my spellbook portfolio. Until our paths cross again...</p>
+      </div>
     </div>
   </div>
-
-  <script>
-    $(document).ready(function() {
-      $('#book').turn({
-        width: 800,
-        height: 500,
-        autoCenter: true,
-        elevation: 50,
-        gradients: true,
-      });
-    });
-  </script>
 </body>
 </html>
