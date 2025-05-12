@@ -2,12 +2,12 @@ $(document).ready(function () {
   const $book = $('#book');
 
   $book.turn({
-    width: 2400,
-    height: 1500,   
+    width: 2000,
+    height: 1000,   
     autoCenter: true,
     elevation: 50,
     gradients: true,
-    duration: 1200
+    duration: 1000
   });
 
   $('#nextPage').click(function () {
