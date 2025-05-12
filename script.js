@@ -2,7 +2,7 @@ $(document).ready(function () {
   const $book = $('#book');
 
   $book.turn({
-    width: 2000,
+    width: 1600,
     height: 1000,   
     autoCenter: true,
     elevation: 50,
