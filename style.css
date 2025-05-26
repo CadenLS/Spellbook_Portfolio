@@ -5,6 +5,10 @@
 }
 
 
+html, body {
+  overflow: hidden !important;
+}
+
 body {
   font-family: 'MedievalSharp', cursive;
   background-color: #2d1b0c;
