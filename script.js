@@ -15,7 +15,6 @@ $(document).ready(function () {
       },
       turned: function (event, page, view) {
         updateNavButtons(page);
-        updateBookShadow(page);
       }
     }
   });
@@ -29,20 +28,10 @@ $(document).ready(function () {
   });
 
   updateNavButtons(1); // Initial button state
-  updateBookShadow(1); // Initial shadow state
 
   function updateNavButtons(page) {
     const totalPages = $book.turn('pages');
     $('#prevPage').toggle(page > 1);
     $('#nextPage').toggle(page < totalPages);
-  }
-
-  function updateBookShadow(page) {
-    const totalPages = $book.turn('pages');
-    if (page === 1 || page === totalPages) {
-      $book.addClass('no-shadow');
-    } else {
-      $book.removeClass('no-shadow');
-    }
   }
 });
