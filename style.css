@@ -18,10 +18,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('images/table.jpg');
+  background-image: url('images/parchment-bg.jpg');
   background-size: cover;
   background-position: center;
   overflow: auto;
+}
+
+.centered-book {
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 #book {
@@ -74,7 +79,7 @@ body {
 }
 
 .page.cover {
-  background: url('images/cover.jpg') no-repeat center center;
+  background: url('images/covers.jpg') no-repeat center center;
   background-size: cover;
   color: #f3e9dc;
   text-align: center;
