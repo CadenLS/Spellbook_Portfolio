@@ -13,7 +13,7 @@ $(document).ready(function () {
     when: {
       turning: function (event, page, view) {
         updateNavButtons(page);
-        updateBookCentering(page);
+        // ...existing code...
       },
       turned: function (event, page, view) {
         updateNavButtons(page);
@@ -31,7 +31,11 @@ $(document).ready(function () {
   });
 
   updateNavButtons(1); // Initial button state
-  updateBookCentering(1); // Initial centering
+
+  // Ensure centering is set after book is initialized and rendered
+  setTimeout(function () {
+    updateBookCentering($book.turn('page'));
+  }, 100);
 
   function updateNavButtons(page) {
     const totalPages = $book.turn('pages');

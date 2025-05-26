@@ -15,13 +15,15 @@ body {
 
 .book-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
   height: 100vh;
-  background-image: url('images/parchment-bg.jpg');
+  background-image: url('images/table.jpg');
   background-size: cover;
   background-position: center;
   overflow: auto;
+  transition: justify-content 0.5s, align-items 0.5s;
 }
 
 .centered-book {
