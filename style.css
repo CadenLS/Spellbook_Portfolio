@@ -25,8 +25,8 @@ body {
 }
 
 #book {
-  width: 1800px; /* 1200 * 1.5 */
-  height: 1125px; /* 750 * 1.5 */
+  width: 1980px; /* 1800 * 1.1 */
+  height: 1237.5px; /* 1125 * 1.1 */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -37,8 +37,8 @@ body {
 
 
 .page {
-  width: 900px; /* 600 * 1.5 */
-  height: 1125px; /* 750 * 1.5 */
+  width: 990px; /* 900 * 1.1 */
+  height: 1237.5px; /* 1125 * 1.1 */
   background: url('images/page-texture.jpg') repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -47,13 +47,13 @@ body {
 }
 
 .page .content {
-  padding: 60px; /* 40 * 1.5 */
+  padding: 66px; /* 60 * 1.1 */
   width: 100%;
   height: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  font-size: 2.475rem; /* 1.65 * 1.5 */
+  font-size: 2.7225rem; /* 2.475 * 1.1 */
   line-height: 1.6;
   color: #3b1e00;
 }
@@ -61,7 +61,7 @@ body {
 
 .page h1, .page h2 {
   color: #5e2605;
-  margin-bottom: 15px; /* 10 * 1.5 */
+  margin-bottom: 16.5px; /* 15 * 1.1 */
 }
 
 .page::-webkit-scrollbar {
@@ -81,26 +81,26 @@ body {
 }
 
 .page.cover h1 {
-  font-size: 4.5rem; /* 3 * 1.5 */
-  margin-top: 225px; /* 150 * 1.5 */
+  font-size: 4.95rem; /* 4.5 * 1.1 */
+  margin-top: 247.5px; /* 225 * 1.1 */
 }
 
 .page.cover .subtitle {
-  font-size: 2.25rem; /* 1.5 * 1.5 */
+  font-size: 2.475rem; /* 2.25 * 1.1 */
   font-style: italic;
   color: #d6b77a;
 }
 
 .links a {
   display: inline-block;
-  margin-right: 22.5px; /* 15 * 1.5 */
-  margin-top: 15px; /* 10 * 1.5 */
+  margin-right: 24.75px; /* 22.5 * 1.1 */
+  margin-top: 16.5px; /* 15 * 1.1 */
   color: #3b1e00;
   background: #f3e9dc;
-  padding: 9px 18px; /* 6,12 * 1.5 */
-  border-radius: 9px; /* 6 * 1.5 */
+  padding: 9.9px 19.8px; /* 9,18 * 1.1 */
+  border-radius: 9.9px; /* 9 * 1.1 */
   text-decoration: none;
-  border: 3px solid #a36d2f; /* 2 * 1.5 */
+  border: 3.3px solid #a36d2f; /* 3 * 1.1 */
   transition: 0.3s;
 }
 
@@ -110,18 +110,18 @@ body {
 
 .page.project img {
   max-width: 100%;
-  margin-bottom: 15px; /* 10 * 1.5 */
-  border: 3px solid #5e2605; /* 2 * 1.5 */
-  border-radius: 6px; /* 4 * 1.5 */
+  margin-bottom: 16.5px; /* 15 * 1.1 */
+  border: 3.3px solid #5e2605; /* 3 * 1.1 */
+  border-radius: 6.6px; /* 6 * 1.1 */
 }
 
 .page.project a {
   display: inline-block;
-  margin-top: 15px; /* 10 * 1.5 */
+  margin-top: 16.5px; /* 15 * 1.1 */
   color: #fff;
   background: #5e2605;
-  padding: 9px 18px; /* 6,12 * 1.5 */
-  border-radius: 9px; /* 6 * 1.5 */
+  padding: 9.9px 19.8px; /* 9,18 * 1.1 */
+  border-radius: 9.9px; /* 9 * 1.1 */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .page.skills li {
-  padding: 7.5px 0; /* 5 * 1.5 */
+  padding: 8.25px 0; /* 7.5 * 1.1 */
   border-bottom: 1px dashed #a36d2f;
 }
 
@@ -151,21 +151,21 @@ body {
 
 .book-controls {
   text-align: center;
-  margin-top: 30px; /* 20 * 1.5 */
+  margin-top: 33px; /* 30 * 1.1 */
   position: absolute;
-  bottom: 60px; /* 40 * 1.5 */
+  bottom: 66px; /* 60 * 1.1 */
   width: 100%;
 }
 
 .nav-button {
   font-family: 'MedievalSharp', cursive;
-  font-size: 2.25rem; /* 1.5 * 1.5 */
+  font-size: 2.475rem; /* 2.25 * 1.1 */
   background-color: #5e2605;
   color: #f3e9dc;
-  border: 3px solid #a36d2f; /* 2 * 1.5 */
-  border-radius: 12px; /* 8 * 1.5 */
-  padding: 15px 30px; /* 10,20 * 1.5 */
-  margin: 0 15px; /* 0,10 * 1.5 */
+  border: 3.3px solid #a36d2f; /* 3 * 1.1 */
+  border-radius: 13.2px; /* 12 * 1.1 */
+  padding: 16.5px 33px; /* 15,30 * 1.1 */
+  margin: 0 16.5px; /* 0,15 * 1.1 */
   cursor: pointer;
   transition: background 0.3s ease;
 }
