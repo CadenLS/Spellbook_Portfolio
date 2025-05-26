@@ -25,8 +25,8 @@ body {
 }
 
 #book {
-  width: 970.2px; /* 1386 * 0.7 */
-  height: 606.375px; /* 866.25 * 0.7 */
+  width: 1261.26px; /* 970.2 * 1.3 */
+  height: 788.2875px; /* 606.375 * 1.3 */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -37,8 +37,8 @@ body {
 
 
 .page {
-  width: 485.1px; /* 693 * 0.7 */
-  height: 606.375px; /* 866.25 * 0.7 */
+  width: 630.63px; /* 485.1 * 1.3 */
+  height: 788.2875px; /* 606.375 * 1.3 */
   background: url('images/page-texture.jpg') repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -47,13 +47,13 @@ body {
 }
 
 .page .content {
-  padding: 32.34px; /* 46.2 * 0.7 */
+  padding: 42.042px; /* 32.34 * 1.3 */
   width: 100%;
   height: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  font-size: 1.334025rem; /* 1.90575 * 0.7 */
+  font-size: 1.7342325rem; /* 1.334025 * 1.3 */
   line-height: 1.6;
   color: #3b1e00;
 }
@@ -61,7 +61,7 @@ body {
 
 .page h1, .page h2 {
   color: #5e2605;
-  margin-bottom: 8.085px; /* 11.55 * 0.7 */
+  margin-bottom: 10.5105px; /* 8.085 * 1.3 */
 }
 
 .page::-webkit-scrollbar {
@@ -81,26 +81,26 @@ body {
 }
 
 .page.cover h1 {
-  font-size: 2.4255rem; /* 3.465 * 0.7 */
-  margin-top: 121.275px; /* 173.25 * 0.7 */
+  font-size: 3.15315rem; /* 2.4255 * 1.3 */
+  margin-top: 157.6575px; /* 121.275 * 1.3 */
 }
 
 .page.cover .subtitle {
-  font-size: 1.21275rem; /* 1.7325 * 0.7 */
+  font-size: 1.576575rem; /* 1.21275 * 1.3 */
   font-style: italic;
   color: #d6b77a;
 }
 
 .links a {
   display: inline-block;
-  margin-right: 12.1275px; /* 17.325 * 0.7 */
-  margin-top: 8.085px; /* 11.55 * 0.7 */
+  margin-right: 15.76675px; /* 12.1275 * 1.3 */
+  margin-top: 10.5105px; /* 8.085 * 1.3 */
   color: #3b1e00;
   background: #f3e9dc;
-  padding: 4.851px 9.702px; /* 6.93,13.86 * 0.7 */
-  border-radius: 4.851px; /* 6.93 * 0.7 */
+  padding: 6.3063px 12.6126px; /* 4.851,9.702 * 1.3 */
+  border-radius: 6.3063px; /* 4.851 * 1.3 */
   text-decoration: none;
-  border: 1.617px solid #a36d2f; /* 3 * 1.1 */
+  border: 2.1021px solid #a36d2f; /* 3 * 1.1 */
   transition: 0.3s;
 }
 
@@ -110,18 +110,18 @@ body {
 
 .page.project img {
   max-width: 100%;
-  margin-bottom: 8.085px; /* 11.55 * 0.7 */
-  border: 1.617px solid #5e2605; /* 3 * 1.1 */
-  border-radius: 3.234px; /* 4.62 * 0.7 */
+  margin-bottom: 10.5105px; /* 8.085 * 1.3 */
+  border: 2.1021px solid #5e2605; /* 3 * 1.1 */
+  border-radius: 4.2042px; /* 3.234 * 1.3 */
 }
 
 .page.project a {
   display: inline-block;
-  margin-top: 8.085px; /* 11.55 * 0.7 */
+  margin-top: 10.5105px; /* 8.085 * 1.3 */
   color: #fff;
   background: #5e2605;
-  padding: 4.851px 9.702px; /* 6.93,13.86 * 0.7 */
-  border-radius: 4.851px; /* 6.93 * 0.7 */
+  padding: 6.3063px 12.6126px; /* 4.851,9.702 * 1.3 */
+  border-radius: 6.3063px; /* 4.851 * 1.3 */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .page.skills li {
-  padding: 4.0425px 0; /* 5.775 * 0.7 */
+  padding: 5.25525px 0; /* 4.0425 * 1.3 */
   border-bottom: 1px dashed #a36d2f;
 }
 
@@ -151,21 +151,21 @@ body {
 
 .book-controls {
   text-align: center;
-  margin-top: 16.17px; /* 23.1 * 0.7 */
+  margin-top: 21.021px; /* 16.17 * 1.3 */
   position: absolute;
-  bottom: 32.34px; /* 46.2 * 0.7 */
+  bottom: 42.042px; /* 32.34 * 1.3 */
   width: 100%;
 }
 
 .nav-button {
   font-family: 'MedievalSharp', cursive;
-  font-size: 1.21275rem; /* 1.7325 * 0.7 */
+  font-size: 1.576575rem; /* 1.21275 * 1.3 */
   background-color: #5e2605;
   color: #f3e9dc;
-  border: 1.617px solid #a36d2f; /* 3 * 1.1 */
-  border-radius: 6.468px; /* 9.24 * 0.7 */
-  padding: 8.085px 16.17px; /* 11.55,23.1 * 0.7 */
-  margin: 0 8.085px; /* 0,11.55 * 0.7 */
+  border: 2.1021px solid #a36d2f; /* 3 * 1.1 */
+  border-radius: 8.4084px; /* 6.468 * 1.3 */
+  padding: 10.5105px 21.021px; /* 8.085,16.17 * 1.3 */
+  margin: 0 10.5105px; /* 0,8.085 * 1.3 */
   cursor: pointer;
   transition: background 0.3s ease;
 }
