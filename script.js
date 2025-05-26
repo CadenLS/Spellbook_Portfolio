@@ -34,4 +34,22 @@ $(document).ready(function () {
     $('#prevPage').toggle(page > 1);
     $('#nextPage').toggle(page < totalPages);
   }
+
+  // Lex Talionis slideshow logic
+  const lexSlides = [
+    'images/LexTalionis_1.png',
+    'images/bosses.png',
+    'images/PlayWithYourFriendsDing.png'
+  ];
+  let lexSlideIndex = 0;
+
+  window.showPrevLexSlide = function() {
+    lexSlideIndex = (lexSlideIndex - 1 + lexSlides.length) % lexSlides.length;
+    $('#lex-slideshow-img').attr('src', lexSlides[lexSlideIndex]);
+  };
+
+  window.showNextLexSlide = function() {
+    lexSlideIndex = (lexSlideIndex + 1) % lexSlides.length;
+    $('#lex-slideshow-img').attr('src', lexSlides[lexSlideIndex]);
+  };
 });
