@@ -25,8 +25,8 @@ body {
 }
 
 #book {
-  width: 1386px; /* 1980 * 0.7 */
-  height: 866.25px; /* 1237.5 * 0.7 */
+  width: 970.2px; /* 1386 * 0.7 */
+  height: 606.375px; /* 866.25 * 0.7 */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -37,8 +37,8 @@ body {
 
 
 .page {
-  width: 693px; /* 990 * 0.7 */
-  height: 866.25px; /* 1237.5 * 0.7 */
+  width: 485.1px; /* 693 * 0.7 */
+  height: 606.375px; /* 866.25 * 0.7 */
   background: url('images/page-texture.jpg') repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -47,13 +47,13 @@ body {
 }
 
 .page .content {
-  padding: 46.2px; /* 66 * 0.7 */
+  padding: 32.34px; /* 46.2 * 0.7 */
   width: 100%;
   height: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  font-size: 1.90575rem; /* 2.7225 * 0.7 */
+  font-size: 1.334025rem; /* 1.90575 * 0.7 */
   line-height: 1.6;
   color: #3b1e00;
 }
@@ -61,7 +61,7 @@ body {
 
 .page h1, .page h2 {
   color: #5e2605;
-  margin-bottom: 11.55px; /* 16.5 * 0.7 */
+  margin-bottom: 8.085px; /* 11.55 * 0.7 */
 }
 
 .page::-webkit-scrollbar {
@@ -81,26 +81,26 @@ body {
 }
 
 .page.cover h1 {
-  font-size: 3.465rem; /* 4.95 * 0.7 */
-  margin-top: 173.25px; /* 247.5 * 0.7 */
+  font-size: 2.4255rem; /* 3.465 * 0.7 */
+  margin-top: 121.275px; /* 173.25 * 0.7 */
 }
 
 .page.cover .subtitle {
-  font-size: 1.7325rem; /* 2.475 * 0.7 */
+  font-size: 1.21275rem; /* 1.7325 * 0.7 */
   font-style: italic;
   color: #d6b77a;
 }
 
 .links a {
   display: inline-block;
-  margin-right: 17.325px; /* 24.75 * 0.7 */
-  margin-top: 11.55px; /* 16.5 * 0.7 */
+  margin-right: 12.1275px; /* 17.325 * 0.7 */
+  margin-top: 8.085px; /* 11.55 * 0.7 */
   color: #3b1e00;
   background: #f3e9dc;
-  padding: 6.93px 13.86px; /* 9.9,19.8 * 0.7 */
-  border-radius: 6.93px; /* 9.9 * 0.7 */
+  padding: 4.851px 9.702px; /* 6.93,13.86 * 0.7 */
+  border-radius: 4.851px; /* 6.93 * 0.7 */
   text-decoration: none;
-  border: 2.31px solid #a36d2f; /* 3 * 1.1 */
+  border: 1.617px solid #a36d2f; /* 3 * 1.1 */
   transition: 0.3s;
 }
 
@@ -110,18 +110,18 @@ body {
 
 .page.project img {
   max-width: 100%;
-  margin-bottom: 11.55px; /* 16.5 * 0.7 */
-  border: 2.31px solid #5e2605; /* 3 * 1.1 */
-  border-radius: 4.62px; /* 6.6 * 0.7 */
+  margin-bottom: 8.085px; /* 11.55 * 0.7 */
+  border: 1.617px solid #5e2605; /* 3 * 1.1 */
+  border-radius: 3.234px; /* 4.62 * 0.7 */
 }
 
 .page.project a {
   display: inline-block;
-  margin-top: 11.55px; /* 16.5 * 0.7 */
+  margin-top: 8.085px; /* 11.55 * 0.7 */
   color: #fff;
   background: #5e2605;
-  padding: 6.93px 13.86px; /* 9.9,19.8 * 0.7 */
-  border-radius: 6.93px; /* 9.9 * 0.7 */
+  padding: 4.851px 9.702px; /* 6.93,13.86 * 0.7 */
+  border-radius: 4.851px; /* 6.93 * 0.7 */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .page.skills li {
-  padding: 5.775px 0; /* 8.25 * 0.7 */
+  padding: 4.0425px 0; /* 5.775 * 0.7 */
   border-bottom: 1px dashed #a36d2f;
 }
 
@@ -151,21 +151,21 @@ body {
 
 .book-controls {
   text-align: center;
-  margin-top: 23.1px; /* 33 * 0.7 */
+  margin-top: 16.17px; /* 23.1 * 0.7 */
   position: absolute;
-  bottom: 46.2px; /* 66 * 0.7 */
+  bottom: 32.34px; /* 46.2 * 0.7 */
   width: 100%;
 }
 
 .nav-button {
   font-family: 'MedievalSharp', cursive;
-  font-size: 1.7325rem; /* 2.475 * 0.7 */
+  font-size: 1.21275rem; /* 1.7325 * 0.7 */
   background-color: #5e2605;
   color: #f3e9dc;
-  border: 2.31px solid #a36d2f; /* 3 * 1.1 */
-  border-radius: 9.24px; /* 13.2 * 0.7 */
-  padding: 11.55px 23.1px; /* 16.5,33 * 0.7 */
-  margin: 0 11.55px; /* 0,16.5 * 0.7 */
+  border: 1.617px solid #a36d2f; /* 3 * 1.1 */
+  border-radius: 6.468px; /* 9.24 * 0.7 */
+  padding: 8.085px 16.17px; /* 11.55,23.1 * 0.7 */
+  margin: 0 8.085px; /* 0,11.55 * 0.7 */
   cursor: pointer;
   transition: background 0.3s ease;
 }

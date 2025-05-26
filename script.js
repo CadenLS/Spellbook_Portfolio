@@ -2,8 +2,8 @@ $(document).ready(function () {
   const $book = $('#book');
 
   $book.turn({
-    width: 1386,   // was 1980
-    height: 866.25,  // was 1237.5
+    width: 970.2,   // was 1386
+    height: 606.375,  // was 866.25
     autoCenter: true,
     elevation: 50,
     gradients: true,
