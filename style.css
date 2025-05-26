@@ -15,20 +15,19 @@ body {
 
 .book-wrapper {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center; /* Always center horizontally */
+  align-items: flex-start; /* Default: top */
   width: 100vw;
   height: 100vh;
-  background-image: url('images/table.jpg');
+  background-image: url('images/parchment-bg.jpg');
   background-size: cover;
   background-position: center;
   overflow: auto;
-  transition: justify-content 0.5s, align-items 0.5s;
+  transition: align-items 0.5s;
 }
 
 .centered-book {
-  justify-content: center !important;
-  align-items: center !important;
+  align-items: center !important; /* Center vertically only when on cover/back */
 }
 
 #book {
