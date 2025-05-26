@@ -15,25 +15,23 @@ body {
 
 .book-wrapper {
   display: flex;
-  justify-content: center; /* Always center horizontally */
-  align-items: flex-start; /* Default: top */
-  width: 100vw;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  background-image: url('images/parchment-bg.jpg');
+  background-image: url('images/table.jpg');
   background-size: cover;
   background-position: center;
   overflow: auto;
-  transition: align-items 0.5s;
-}
-
-.centered-book {
-  align-items: center !important; /* Center vertically only when on cover/back */
 }
 
 #book {
   width: 1261.26px; /* 970.2 * 1.3 */
   height: 788.2875px; /* 606.375 * 1.3 */
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+#book.no-shadow {
+  box-shadow: none !important;
 }
 
 #book .page {
