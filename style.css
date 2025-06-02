@@ -42,8 +42,8 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 }
 
 #book {
-  width: 1261.26px; /* 970.2 * 1.3 */
-  height: 788.2875px; /* 606.375 * 1.3 */
+  width: 1387.386px; /* 1261.26 * 1.1 */
+  height: 867.11625px; /* 788.2875 * 1.1 */
   overflow: hidden !important;
   max-width: 100vw;
   max-height: 100vh;
@@ -56,8 +56,8 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
 
 .page {
-  width: 630.63px; /* 485.1 * 1.3 */
-  height: 788.2875px; /* 606.375 * 1.3 */
+  width: 693.693px; /* 630.63 * 1.1 */
+  height: 867.11625px; /* 788.2875 * 1.1 */
   background: url('images/pages.jpg') repeat;
   background-size: cover;
   box-sizing: border-box;
@@ -66,13 +66,13 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 }
 
 .page .content {
-  padding: 42.042px; /* 32.34 * 1.3 */
+  padding: 46.2462px; /* 42.042 * 1.1 */
   width: 100%;
   height: 100%;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  font-size: 1.7342325rem; /* 1.334025 * 1.3 */
+  font-size: 1.90765575rem; /* 1.7342325 * 1.1 */
   line-height: 1.6;
   color: #000; /* Set text color to black */
 }
@@ -100,26 +100,26 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 }
 
 .page.cover h1 {
-  font-size: 3.15315rem; /* 2.4255 * 1.3 */
-  margin-top: 157.6575px; /* 121.275 * 1.3 */
+  font-size: 3.468465rem; /* 3.15315 * 1.1 */
+  margin-top: 173.42325px; /* 157.6575 * 1.1 */
 }
 
 .page.cover .subtitle {
-  font-size: 1.576575rem; /* 1.21275 * 1.3 */
+  font-size: 1.7342325rem; /* 1.576575 * 1.1 */
   font-style: italic;
   color: #d6b77a;
 }
 
 .links a {
   display: inline-block;
-  margin-right: 15.76675px; /* 12.1275 * 1.3 */
-  margin-top: 10.5105px; /* 8.085 * 1.3 */
+  margin-right: 17.343425px; /* 15.76675 * 1.1 */
+  margin-top: 11.56155px; /* 10.5105 * 1.1 */
   color: #3b1e00;
   background: #f3e9dc;
-  padding: 6.3063px 12.6126px; /* 4.851,9.702 * 1.3 */
-  border-radius: 6.3063px; /* 4.851 * 1.3 */
+  padding: 6.93693px 13.87386px; /* 6.3063,12.6126 * 1.1 */
+  border-radius: 6.93693px; /* 6.3063 * 1.1 */
   text-decoration: none;
-  border: 2.1021px solid #a36d2f; /* 3 * 1.1 */
+  border: 2.31231px solid #a36d2f; /* 3 * 1.1 */
   transition: 0.3s;
 }
 
@@ -129,18 +129,18 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
 .page.project img {
   max-width: 100%;
-  margin-bottom: 10.5105px; /* 8.085 * 1.3 */
-  border: 2.1021px solid #5e2605; /* 3 * 1.1 */
-  border-radius: 4.2042px; /* 3.234 * 1.3 */
+  margin-bottom: 11.56155px; /* 10.5105 * 1.1 */
+  border: 2.31231px solid #5e2605; /* 3 * 1.1 */
+  border-radius: 4.62462px; /* 4.2042 * 1.1 */
 }
 
 .page.project a {
   display: inline-block;
-  margin-top: 10.5105px; /* 8.085 * 1.3 */
+  margin-top: 11.56155px; /* 10.5105 * 1.1 */
   color: #fff;
   background: #5e2605;
-  padding: 6.3063px 12.6126px; /* 4.851,9.702 * 1.3 */
-  border-radius: 6.3063px; /* 4.851 * 1.3 */
+  padding: 6.93693px 13.87386px; /* 6.3063,12.6126 * 1.1 */
+  border-radius: 6.93693px; /* 6.3063 * 1.1 */
   text-decoration: none;
   transition: 0.3s;
 }
@@ -155,7 +155,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 }
 
 .page.skills li {
-  padding: 5.25525px 0; /* 4.0425 * 1.3 */
+  padding: 5.780775px 0; /* 5.25525 * 1.1 */
   border-bottom: 1px dashed #a36d2f;
 }
 
@@ -170,21 +170,21 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 
 .book-controls {
   text-align: center;
-  margin-top: 21.021px; /* 16.17 * 1.3 */
+  margin-top: 23.1231px; /* 21.021 * 1.1 */
   position: absolute;
-  bottom: 42.042px; /* 32.34 * 1.3 */
+  bottom: 46.2462px; /* 42.042 * 1.1 */
   width: 100%;
 }
 
 .nav-button {
   font-family: 'MedievalSharp', cursive;
-  font-size: 1.576575rem; /* 1.21275 * 1.3 */
+  font-size: 1.7342325rem; /* 1.576575 * 1.1 */
   background-color: #5e2605;
   color: #f3e9dc;
-  border: 2.1021px solid #a36d2f; /* 3 * 1.1 */
-  border-radius: 8.4084px; /* 6.468 * 1.3 */
-  padding: 10.5105px 21.021px; /* 8.085,16.17 * 1.3 */
-  margin: 0 10.5105px; /* 0,8.085 * 1.3 */
+  border: 2.31231px solid #a36d2f; /* 3 * 1.1 */
+  border-radius: 9.24924px; /* 8.4084 * 1.1 */
+  padding: 11.56155px 23.1231px; /* 10.5105,21.021 * 1.1 */
+  margin: 0 11.56155px; /* 0,10.5105 * 1.1 */
   cursor: pointer;
   transition: background 0.3s ease;
 }
