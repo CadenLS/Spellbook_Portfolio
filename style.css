@@ -77,6 +77,10 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   color: #000; /* Set text color to black */
 }
 
+.page .content p {
+  font-size: 0.9em;
+}
+
 
 .page h1, .page h2 {
   color: #5e2605;
