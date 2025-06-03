@@ -128,7 +128,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 }
 
 .page.project img {
-  max-width: 100%;
+  max-width: 70%;
   margin-bottom: 11.56155px; /* 10.5105 * 1.1 */
   border: 2.31231px solid #5e2605; /* 3 * 1.1 */
   border-radius: 4.62462px; /* 4.2042 * 1.1 */
