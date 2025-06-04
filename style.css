@@ -99,6 +99,13 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   text-align: center;
 }
 
+.page.backcover {
+  background: url('images/backCover.jpg') no-repeat center center;
+  background-size: cover;
+  color: #f3e9dc;
+  text-align: center;
+}
+
 .page.cover h1 {
   font-size: 3.468465rem; /* 3.15315 * 1.1 */
   margin-top: 173.42325px; /* 157.6575 * 1.1 */
