@@ -70,17 +70,31 @@ $(document).ready(function () {
     return false;
   });
 
-  // Scroll wheel navigation
+  // Improved scroll wheel navigation (allow scroll even during animation)
+  let scrollTimeout = null;
+  let scrollDirection = null;
+
   $('#book').on('wheel', function(e) {
-    if ($(e.target).closest('.page .content').length) {
-      // Allow scrolling inside content if needed
+    e.preventDefault();
+
+    // Determine direction
+    if (e.originalEvent.deltaY < 0) {
+      scrollDirection = 'previous';
+    } else if (e.originalEvent.deltaY > 0) {
+      scrollDirection = 'next';
+    } else {
       return;
     }
-    if (e.originalEvent.deltaY < 0) {
-      $book.turn('previous');
-    } else if (e.originalEvent.deltaY > 0) {
-      $book.turn('next');
+
+    // If already animating, queue up the next scroll after a short delay
+    if ($book.turn('animating')) {
+      if (scrollTimeout) clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(function() {
+        $book.turn(scrollDirection);
+        scrollTimeout = null;
+      }, 100);
+    } else {
+      $book.turn(scrollDirection);
     }
-    e.preventDefault();
   });
 });
