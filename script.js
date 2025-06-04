@@ -58,4 +58,10 @@ $(document).ready(function () {
     const page = parseInt($(this).data('page'), 10);
     $book.turn('page', page);
   });
+
+  // Quick navigation bar
+  $(document).on('click', '.quick-nav-btn', function() {
+    const page = parseInt($(this).data('page'), 10);
+    $book.turn('page', page);
+  });
 });

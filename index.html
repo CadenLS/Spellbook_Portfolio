@@ -13,6 +13,22 @@
   <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="quick-nav-bar" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 16px; margin-top: 16px;">
+    <button class="quick-nav-btn" data-page="1">Cover</button>
+    <button class="quick-nav-btn" data-page="2">Welcome</button>
+    <button class="quick-nav-btn" data-page="3">Table of Contents</button>
+    <button class="quick-nav-btn" data-page="4">About Me</button>
+    <button class="quick-nav-btn" data-page="5">Echolith</button>
+    <button class="quick-nav-btn" data-page="6">Lex Talionis A</button>
+    <button class="quick-nav-btn" data-page="7">Physics Game</button>
+    <button class="quick-nav-btn" data-page="8">Echolon</button>
+    <button class="quick-nav-btn" data-page="9">Skills: Proficient</button>
+    <button class="quick-nav-btn" data-page="10">Skills: Intermediate</button>
+    <button class="quick-nav-btn" data-page="11">Skills: Actively Learning</button>
+    <button class="quick-nav-btn" data-page="12">Skills: Durable</button>
+    <button class="quick-nav-btn" data-page="13">Contact</button>
+    <button class="quick-nav-btn" data-page="14">Back Cover</button>
+  </div>
   <div class="book-wrapper">
 
     <div class="book-controls">
@@ -43,20 +59,38 @@
       <!-- Table of Contents -->
       <div class="page toc">
         <div class="content">
-          <h2>Table of Contents</h2>
-          <ul style="list-style: none; padding: 0;">
-            <li><button class="toc-link" data-page="3">About Me</button></li>
-            <li><button class="toc-link" data-page="4">Echolith (Current Project)</button></li>
-            <li><button class="toc-link" data-page="5">Lex Talionis A</button></li>
-            <li><button class="toc-link" data-page="6">Physics Game</button></li>
-            <li><button class="toc-link" data-page="7">Echolon (Personal Project)</button></li>
-            <li><button class="toc-link" data-page="8">Skills: Proficient</button></li>
-            <li><button class="toc-link" data-page="9">Skills: Intermediate</button></li>
-            <li><button class="toc-link" data-page="10">Skills: Actively Learning</button></li>
-            <li><button class="toc-link" data-page="11">Skills: Durable</button></li>
-            <li><button class="toc-link" data-page="12">Contact</button></li>
+          <h2 style="text-align:center; margin-bottom: 24px;">Table of Contents</h2>
+          <ul style="list-style: none; padding: 0; max-width: 400px; margin: 0 auto;">
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="4">About Me</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="5">Echolith (Current Project)</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="6">Lex Talionis A</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="7">Physics Game</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="8">Echolon (Personal Project)</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="9">Skills: Proficient</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="10">Skills: Intermediate</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="11">Skills: Actively Learning</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="12">Skills: Durable</button></li>
+            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="13">Contact</button></li>
           </ul>
         </div>
+        <style>
+          .toc-link {
+            width: 100%;
+            padding: 10px 0;
+            background: #f5e6d0;
+            border: 2px solid #5e2605;
+            border-radius: 6px;
+            font-family: 'MedievalSharp', cursive;
+            font-size: 1.1em;
+            color: #5e2605;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+          }
+          .toc-link:hover {
+            background: #e0c9a6;
+            color: #a0522d;
+          }
+        </style>
       </div>
 
       <!-- About Me -->
@@ -88,8 +122,8 @@
         <div class="content">
             <h2>Lex Talionis A</h2>
             <div style="display: flex; gap: 24px; justify-content: center; align-items: center; margin-bottom: 16px;">
-                <img src="images/LexTalionis_1.png" alt="Lex Talionis Screenshot 1" style="width: 350px; height: auto; border: 2.1px solid #5e2605; border-radius: 4.2px;">
-                <img src="images/PlayWithYourFriendsDing.png" alt="Play With Your Friends" style="width: 350px; height: auto; border: 2.1px solid #5e2605; border-radius: 4.2px;">
+                <img src="images/LexTalionis_1.png" alt="Lex Talionis Screenshot 1" style="width: 300px; height: auto; border: 2.1px solid #5e2605; border-radius: 4.2px;">
+                <img src="images/PlayWithYourFriendsDing.png" alt="Play With Your Friends" style="width: 300px; height: auto; border: 2.1px solid #5e2605; border-radius: 4.2px;">
             </div>
             <p><em>Lex Talionis A</em>—the law of retaliation. As aliens, fight through astronauts, drones, and bosses to avenge humanity’s hostile takeover. Life is sacred, so in this team-based couch co-op, trust your allies not to waste your lives. Choose from four unique aliens, from golf-club brawlers to mammoth summoners. No matter who you are—don’t stop the assault. THIS... IS... WAR!</p>
             <a href="https://store.steampowered.com/app/3512790/Lex_Talionis_A/" target="_blank">Steam</a>
@@ -182,8 +216,9 @@
       </div>
 
       <!-- Back Cover -->
-      <div class="page covers">
-        <div class="content">
+      <div class="page cover">
+        <div class="content" style="padding:0; height:100%; width:100%;">
+          <img src="images/backCover.jpg" alt="Back Cover" style="width:100%; height:100%; object-fit:cover; display:block;"/>
         </div>
       </div>
 
