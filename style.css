@@ -99,7 +99,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   text-align: center;
 }
 
-.page.backcover {
+.page.covers {
   background: url('images/backCover.jpg') no-repeat center center;
   background-size: cover;
   color: #f3e9dc;
