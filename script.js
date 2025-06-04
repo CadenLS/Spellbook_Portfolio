@@ -45,11 +45,15 @@ $(document).ready(function () {
 
   window.showPrevLexSlide = function() {
     lexSlideIndex = (lexSlideIndex - 1 + lexSlides.length) % lexSlides.length;
-    $('#lex-slideshow-img').attr('src', lexSlides[lexSlideIndex]);
+    $('#lex-slideshow-img')
+      .attr('src', lexSlides[lexSlideIndex])
+      .css({ width: '300px', height: 'auto' }); // Set desired size
   };
 
   window.showNextLexSlide = function() {
     lexSlideIndex = (lexSlideIndex + 1) % lexSlides.length;
-    $('#lex-slideshow-img').attr('src', lexSlides[lexSlideIndex]);
+    $('#lex-slideshow-img')
+      .attr('src', lexSlides[lexSlideIndex])
+      .css({ width: '300px', height: 'auto' }); // Set desired size
   };
 });
