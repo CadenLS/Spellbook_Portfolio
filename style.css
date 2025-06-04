@@ -231,13 +231,13 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   list-style: none;
   padding: 0;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
   font-family: 'MedievalSharp', cursive;
   font-size: 1.2em;
 }
 .book-toc-list li {
   margin-bottom: 14px;
-  border-bottom: 1px dotted #bfa77a;
+  border-bottom: none;
   position: relative;
   text-align: left;
 }
@@ -257,9 +257,11 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   background: #f5e6d0;
 }
 .book-toc-list .toc-title {
-  flex: 0 0 auto;
-  padding-right: 10px;
+  flex: 0 1 auto;
+  padding-right: 0.5em;
   background: none;
+  min-width: 180px;
+  text-align: left;
 }
 .book-toc-list .toc-dots {
   flex: 1 1 auto;
@@ -271,15 +273,27 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   overflow: hidden;
   text-align: left;
   background: none;
-  /* Remove fixed width, let it fill the row */
+  height: 1em;
+  line-height: 1em;
+  margin-right: 0.5em;
+  /* fill the space between title and page number */
 }
 .book-toc-list .toc-dots::before {
-  content: "";
-  display: inline-block;
+  content: "................................................................................................................................................................................................................................................";
+  display: block;
   width: 100%;
-  border-bottom: 1px dotted #bfa77a;
-  position: relative;
-  top: -0.3em;
-  /* This creates a dotted line that stretches to the end */
+  max-width: 100%;
+  vertical-align: middle;
+  background: none;
+  overflow: hidden;
+}
+.book-toc-list .toc-page {
+  flex: 0 0 auto;
+  min-width: 2em;
+  text-align: right;
+  color: #5e2605;
+  font-family: 'MedievalSharp', cursive;
+  margin-left: 0.5em;
+  background: none;
 }
 
