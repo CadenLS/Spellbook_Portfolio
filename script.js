@@ -69,4 +69,18 @@ $(document).ready(function () {
     }
     return false;
   });
+
+  // Scroll wheel navigation
+  $('#book').on('wheel', function(e) {
+    if ($(e.target).closest('.page .content').length) {
+      // Allow scrolling inside content if needed
+      return;
+    }
+    if (e.originalEvent.deltaY < 0) {
+      $book.turn('previous');
+    } else if (e.originalEvent.deltaY > 0) {
+      $book.turn('next');
+    }
+    e.preventDefault();
+  });
 });
