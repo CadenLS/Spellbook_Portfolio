@@ -52,4 +52,10 @@ $(document).ready(function () {
     lexSlideIndex = (lexSlideIndex + 1) % lexSlides.length;
     $('#lex-slideshow-img').attr('src', lexSlides[lexSlideIndex]);
   };
+
+  // Table of Contents navigation
+  $(document).on('click', '.toc-link', function() {
+    const page = parseInt($(this).data('page'), 10);
+    $book.turn('page', page);
+  });
 });
