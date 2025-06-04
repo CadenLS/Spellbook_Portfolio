@@ -233,7 +233,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   max-width: 500px;
   margin: 0;
   font-family: 'MedievalSharp', cursive;
-  font-size: 1.2em;
+  font-size: 1em; /* smaller font size */
 }
 .book-toc-list li {
   margin-bottom: 14px;
@@ -244,7 +244,7 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
 .book-toc-list a.toc-link {
   display: flex;
   align-items: center;
-  color: #5e2605;
+  color: #000; /* black text */
   text-decoration: none;
   padding: 4px 0;
   transition: color 0.2s;
@@ -262,6 +262,8 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   background: none;
   min-width: 180px;
   text-align: left;
+  font-size: 0.95em; /* even smaller for just the title */
+  color: #000; /* black text */
 }
 .book-toc-list .toc-dots {
   flex: 1 1 auto;
