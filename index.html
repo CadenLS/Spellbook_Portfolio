@@ -13,23 +13,25 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="quick-nav-bar" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 16px; margin-top: 16px;">
-    <button class="quick-nav-btn" data-page="1">Cover</button>
-    <button class="quick-nav-btn" data-page="2">Welcome</button>
-    <button class="quick-nav-btn" data-page="3">Table of Contents</button>
-    <button class="quick-nav-btn" data-page="4">About Me</button>
-    <button class="quick-nav-btn" data-page="5">Echolith</button>
-    <button class="quick-nav-btn" data-page="6">Lex Talionis A</button>
-    <button class="quick-nav-btn" data-page="7">Physics Game</button>
-    <button class="quick-nav-btn" data-page="8">Echolon</button>
-    <button class="quick-nav-btn" data-page="9">Skills: Proficient</button>
-    <button class="quick-nav-btn" data-page="10">Skills: Intermediate</button>
-    <button class="quick-nav-btn" data-page="11">Skills: Actively Learning</button>
-    <button class="quick-nav-btn" data-page="12">Skills: Durable</button>
-    <button class="quick-nav-btn" data-page="13">Contact</button>
-    <button class="quick-nav-btn" data-page="14">Back Cover</button>
+  <div class="quick-nav-bar" style="position: absolute; top: 0; left: 0; width: 100vw; display: flex; justify-content: center; gap: 10px; z-index: 1000; pointer-events: none;">
+    <div style="display: flex; gap: 10px; pointer-events: auto;">
+      <button class="quick-nav-btn" data-page="1">Cover</button>
+      <button class="quick-nav-btn" data-page="2">Welcome</button>
+      <button class="quick-nav-btn" data-page="3">Table of Contents</button>
+      <button class="quick-nav-btn" data-page="4">About Me</button>
+      <button class="quick-nav-btn" data-page="5">Echolith</button>
+      <button class="quick-nav-btn" data-page="6">Lex Talionis A</button>
+      <button class="quick-nav-btn" data-page="7">Physics Game</button>
+      <button class="quick-nav-btn" data-page="8">Echolon</button>
+      <button class="quick-nav-btn" data-page="9">Skills: Proficient</button>
+      <button class="quick-nav-btn" data-page="10">Skills: Intermediate</button>
+      <button class="quick-nav-btn" data-page="11">Skills: Actively Learning</button>
+      <button class="quick-nav-btn" data-page="12">Skills: Durable</button>
+      <button class="quick-nav-btn" data-page="13">Contact</button>
+      <button class="quick-nav-btn" data-page="14">Back Cover</button>
+    </div>
   </div>
-  <div class="book-wrapper">
+  <div class="book-wrapper" style="margin-top: 0;">
 
     <div class="book-controls">
         <button id="prevPage" class="nav-button">←</button>
@@ -60,35 +62,67 @@
       <div class="page toc">
         <div class="content">
           <h2 style="text-align:center; margin-bottom: 24px;">Table of Contents</h2>
-          <ul style="list-style: none; padding: 0; max-width: 400px; margin: 0 auto;">
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="4">About Me</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="5">Echolith (Current Project)</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="6">Lex Talionis A</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="7">Physics Game</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="8">Echolon (Personal Project)</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="9">Skills: Proficient</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="10">Skills: Intermediate</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="11">Skills: Actively Learning</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="12">Skills: Durable</button></li>
-            <li style="margin-bottom: 12px;"><button class="toc-link" data-page="13">Contact</button></li>
+          <ul class="book-toc-list">
+            <li><a href="#" class="toc-link" data-page="4">About Me<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="5">Echolith (Current Project)<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="6">Lex Talionis A<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="7">Physics Game<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="8">Echolon (Personal Project)<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="9">Skills: Proficient<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="10">Skills: Intermediate<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="11">Skills: Actively Learning<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="12">Skills: Durable<span class="toc-dots"></span></a></li>
+            <li><a href="#" class="toc-link" data-page="13">Contact<span class="toc-dots"></span></a></li>
           </ul>
         </div>
         <style>
-          .toc-link {
-            width: 100%;
-            padding: 10px 0;
-            background: #f5e6d0;
-            border: 2px solid #5e2605;
-            border-radius: 6px;
+          .book-toc-list {
+            list-style: none;
+            padding: 0;
+            max-width: 500px;
+            margin: 0 auto;
             font-family: 'MedievalSharp', cursive;
-            font-size: 1.1em;
-            color: #5e2605;
-            cursor: pointer;
-            transition: background 0.2s, color 0.2s;
+            font-size: 1.2em;
           }
-          .toc-link:hover {
-            background: #e0c9a6;
+          .book-toc-list li {
+            margin-bottom: 14px;
+            border-bottom: 1px dotted #bfa77a;
+            position: relative;
+          }
+          .book-toc-list a.toc-link {
+            display: block;
+            color: #5e2605;
+            text-decoration: none;
+            padding: 4px 0;
+            transition: color 0.2s;
+            position: relative;
+            width: 100%;
+          }
+          .book-toc-list a.toc-link:hover {
             color: #a0522d;
+            background: #f5e6d0;
+          }
+          .book-toc-list .toc-dots {
+            position: absolute;
+            left: 180px;
+            right: 0;
+            color: #bfa77a;
+            pointer-events: none;
+            font-family: monospace;
+            letter-spacing: 2px;
+            white-space: nowrap;
+          }
+          /* Responsive dots: fill the space between text and edge */
+          .book-toc-list a.toc-link {
+            position: relative;
+          }
+          .book-toc-list a.toc-link .toc-dots::before {
+            content: "................................................................................................................";
+            display: inline-block;
+            width: 100%;
+            max-width: 100%;
+            overflow: hidden;
+            vertical-align: middle;
           }
         </style>
       </div>

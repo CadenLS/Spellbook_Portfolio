@@ -60,8 +60,13 @@ $(document).ready(function () {
   });
 
   // Quick navigation bar
-  $(document).on('click', '.quick-nav-btn', function() {
-    const page = parseInt($(this).data('page'), 10);
-    $book.turn('page', page);
+  $(document).on('click', '.quick-nav-btn', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const page = parseInt($(this).attr('data-page'), 10);
+    if (!isNaN(page)) {
+      $book.turn('page', page);
+    }
+    return false;
   });
 });

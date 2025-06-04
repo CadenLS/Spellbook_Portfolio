@@ -227,3 +227,52 @@ body::-webkit-scrollbar, html::-webkit-scrollbar {
   background: #7a3e13;
 }
 
+.book-toc-list {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1.2em;
+}
+.book-toc-list li {
+  margin-bottom: 14px;
+  border-bottom: 1px dotted #bfa77a;
+  position: relative;
+}
+.book-toc-list a.toc-link {
+  display: block;
+  color: #5e2605;
+  text-decoration: none;
+  padding: 4px 0;
+  transition: color 0.2s;
+  position: relative;
+  width: 100%;
+}
+.book-toc-list a.toc-link:hover {
+  color: #a0522d;
+  background: #f5e6d0;
+}
+.book-toc-list .toc-dots {
+  position: absolute;
+  left: 180px;
+  right: 0;
+  color: #bfa77a;
+  pointer-events: none;
+  font-family: monospace;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+/* Responsive dots: fill the space between text and edge */
+.book-toc-list a.toc-link {
+  position: relative;
+}
+.book-toc-list a.toc-link .toc-dots::before {
+  content: "................................................................................................................";
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
